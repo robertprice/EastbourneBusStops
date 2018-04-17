@@ -14,3 +14,6 @@ library(ggmap)
 eastbourne2_lvl13_map_g_str <- get_map(location = c(lon=0.2929012,  lat=50.7896285), zoom = 13)
 ggmap(eastbourne2_lvl13_map_g_str, extent = "device") + geom_point(data=EastbourneStops, mapping=aes(y=Latitude, x=Longitude), color = "red", size = 2, show.legend=FALSE)
 ```
+
+![Bus stops in Eastbourne]
+(https://github.com/robertprice/EastbourneBusStops/blob/master/stops.png?raw=true)
