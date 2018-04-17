@@ -16,4 +16,4 @@ ggmap(eastbourne2_lvl13_map_g_str, extent = "device") + geom_point(data=Eastbour
 ```
 
 ![Bus stops in Eastbourne]
-(https://github.com/robertprice/EastbourneBusStops/blob/master/stops.png?raw=true)
+(https://github.com/robertprice/EastbourneBusStops/blob/master/stops.png)
