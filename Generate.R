@@ -8,7 +8,7 @@ Stops <- read_csv("~/Downloads/NaPTAN140csv/Stops.csv",
         ModificationDateTime = col_datetime(format = "%Y-%m-%dT%H:%M:%S")))
 
 # filter out only stops in Eastbourne.
-EastbourneStops <- Stops[Stops$ParentLocalityName=="Eastbourne" & !is.na(Stops$ParentLocalityName),]
+EastbourneStops <- Stops[(Stops$ParentLocalityName=="Eastbourne" & !is.na(Stops$ParentLocalityName)) | (Stops$LocalityName=="Eastbourne" & !is.na(Stops$LocalityName)),]
 
 # write these out to a fresh CSV file.
 write.csv(EastbourneStops, file = "~/Desktop/EastbourneStops.csv", na="", row.names = FALSE)
